@@ -20,5 +20,6 @@ int main (void)
 	}
 	}
 	printf("%ld\n", maxf);
+	putchar('\n');
 	return (0);
 }
