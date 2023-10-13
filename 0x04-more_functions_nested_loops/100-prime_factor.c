@@ -5,8 +5,7 @@
  * main - the largest prime factor
  * Return: always 0
  */
-
-int main (void)
+int main(void)
 {
 	long x, maxf;
 	long number = 612852475143;
@@ -20,6 +19,5 @@ int main (void)
 	}
 	}
 	printf("%ld\n", maxf);
-	putchar('\n');
 	return (0);
 }
