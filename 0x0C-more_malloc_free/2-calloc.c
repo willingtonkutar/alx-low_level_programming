@@ -6,25 +6,16 @@
  * @size: size of each single element in bytes
  * Return: a pointer to the allocated memory
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr;
-	unsigned int total_size;
+	char *output;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-
-	total_size = nmemb * size;
-	ptr = malloc(total_size);
-
-	if (ptr == NULL)
+	output = calloc(nmemb, size);
+	if (output == NULL)
 		return (NULL);
-	return (ptr);
+	else
+		return (output);
 }
-
-
-
-
-
-
-
