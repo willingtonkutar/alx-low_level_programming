@@ -3,19 +3,20 @@
 #include <stddef.h>
 
  /**
-  * array_iterator - execures function on each element array
-  * @array: the used array
-  * @size: size of array
-  * @action: function to perfom on each element array
+  *array_iterator - execures function on each element array
+  *@array: the used array
+  *@size: size of array
+  *@action: function to perfom on each element array
+  *@array_iterator: executes a function
   */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if (array != NULL && action != NULL)
+	size_t i;
+
+	if (array && action)
 	{
-		for (size_t i = 0; i < size; i++)
-		{
-			action(array[i]);
-		}
+		for (i = 0; i < size; i++)
+		action(array[i]);
 	}
 }
