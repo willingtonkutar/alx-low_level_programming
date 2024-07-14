@@ -1,0 +1,15 @@
+The space complexity of the function `allocate_map` is O(n * m).
+
+Analysis:
+
+1. Allocating `map`:
+   - Allocates memory for an array of `n` pointers to `int`.
+   - Space complexity: O(n).
+
+2. Allocating rows in the `map`:
+   - Iterates over `n` and allocates an array of `m` integers for each pointer in the `map`.
+   - Space complexity for each row: O(m).
+   - Total space complexity for all rows: O(n * m).
+
+Therefore, the total space complexity is:
+O(n) + O(n * m) = O(n * m)
